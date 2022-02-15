@@ -56,7 +56,7 @@ describe("Test images router", () => {
     });
     it("should throw 404 error when attempting to get non-existing image", async () => {
         const response = await request.get(
-            `/images/mockWrongImageName?width=200&height=200`
+            "/images/mockWrongImageName?width=200&height=200"
         );
 
         expect(response.status).toBe(404);

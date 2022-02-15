@@ -28,8 +28,8 @@ imagesRouter.get("/:imageName", async (req, res) => {
             }
             res.sendFile(imagePath);
         } else res.status(404).send("Image not found");
-    } catch (err: any) {
-        res.send("An error occurred: " + err.message);
+    } catch (err: unknown) {
+        res.send("An error occurred: " + (err as Error).message);
     }
 });
 
