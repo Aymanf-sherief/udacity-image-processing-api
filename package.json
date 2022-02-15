@@ -8,8 +8,8 @@
         "jasmine": "jasmine",
         "start": "nodemon src/index.ts",
         "build": "npx tsc",
-        "prettify": "prettier --write",
-        "lint": ".\\node_modules\\.bin\\eslint"
+        "prettify": "prettier **\\*.ts --write",
+        "lint": ".\\node_modules\\.bin\\eslint **\\*.ts --fix"
     },
     "repository": {
         "type": "git",

@@ -19,5 +19,5 @@ This is a simple image API for serving images with various sizes built using Nod
 2. `jasmine`: run tests without building
 3. `start`: start server and watch files on changes
 4. `build`: build project
-5. `prettify`: apply `prettier`, specify a path after command. example: `npm run prettify .\src`
-6. `lint`: lint files using `eslint`, specify a path after command. example: `npm run lint .\src`. Also, if you're running this in a linux environment you will need to change the double backslashes in the command with single forward slashes. so it becomes `./node_modules/.bin/eslint`
+5. `prettify`: apply `prettier` to all typescript files, if you're running this in a linux environment you will need to change the double backslashes in the command with single forward slashes. so it becomes `prettier **/*.ts --write`
+6. `lint`: lints all typescript files using `eslint`, if you're running this in a linux environment you will need to change the double backslashes in the command with single forward slashes. so it becomes `./node_modules/.bin/eslint **/*.ts`
